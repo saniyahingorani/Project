@@ -1,0 +1,794 @@
+* {
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+.abc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.def {
+    padding-left: 40px;
+    white-space: nowrap;
+    font-size: smaller;
+    cursor: pointer;
+}
+#one {
+    white-space: nowrap;
+}
+
+#two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.icon {
+    width: 35px;
+    height: 40px;
+}
+
+.icon-1 {
+    width: 70px;
+    height: 45px;
+}
+
+.hover:hover {
+    border-bottom: 1px solid black;
+}
+.dropbtn {
+    background-color: transparent;
+    color: rgb(63, 63, 63);
+    padding: 9px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.contentshop {
+
+    height: auto;
+    width: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.a {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.a:hover {
+    overflow: auto;
+}
+
+.box {
+    border: 1px solid rgb(188, 187, 187);
+    width: 200px;
+    height: 200px;
+    margin-left: -35px;
+}
+.boxx{
+    margin-left: -40px;
+}
+.cursor {
+    cursor: pointer;
+}
+.rk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.img-2 {
+    width: 280px;
+    height: 320px;
+    margin-right: 30px;
+}
+.rkh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.img-1 {
+    width: 300px;
+    height: 300px;
+}
+
+.bags {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+.ffs{
+    font-size: 18px;
+}
+.span {
+    margin-left: 80px;
+}
+.va {
+    margin-left: 720px;
+}
+.bb {
+    border: 1px solid gray;
+}
+.img-4 {
+    width: 320px;
+    height: 320px;
+}
+.img-5 {
+    width: 290px;
+    height: 290px;
+}
+.spot {
+    width: 650px;
+}
+
+.spot-1 {
+    width: 650px;
+    margin-left: -30px;
+}
+.jgold {
+    margin-left: 110px;
+    width: 200px;
+}
+
+.jgold-1 {
+    width: 200px;
+    margin-left: -30px;
+}
+.jewel {
+    margin-left: 190px;
+}
+
+.jewel-1 {
+    margin-left: 30px;
+}
+.fivei {
+    margin-left: 50px;
+    width: 1450px;
+}
+
+.fivei-1 {
+    margin-left: 50px;
+    width: 720px;
+}
+
+.fivei-2 {
+    margin-left: 10px;
+    width: 720px;
+}
+.img-6 {
+    width: 300px;
+    height: 300px;
+    margin-left: -10px;
+}
+.latco-1 {
+    width: 635px;
+    height: 330px;
+}
+
+.latco {
+    width: 635px;
+    height: 330px;
+    margin-left: -30px;
+}
+.img-7 {
+    width: 500px;
+    height: 700p;
+    border-radius: 20px;
+}
+.fm {
+    margin-left: 250px;
+}
+
+.fm-1 {
+    margin-right: 10px;
+}
+.gift {
+    background-color: white;
+    margin-left: 230px;
+    margin-top: 440px;
+    padding-top: 2px;
+    padding-left: 6px;
+    height: 50px;
+    width: 260px;
+}
+
+.gift-1 {
+    background-color: white;
+    margin-left: 740px;
+    margin-top: 440px;
+    padding-top: 2px;
+    padding-left: 6px;
+    height: 50px;
+    width: 260px;
+}
+.img-8 {
+    width: 330px;
+    height: 350px;
+}
+.span-1 {
+    margin-left: 120px;
+}
+.bof {
+    width: 100%;
+}
+.container-01 {
+    width: 40%;
+    height: 650px;
+    animation: changeBackgroundImage 4s infinite;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 450px;
+}
+
+@keyframes changeBackgroundImage {
+    0% {
+        background-image: url('https://www.giva.co/cdn/shop/files/testimonial_1024x1024.gif?v=1614292479');
+    }
+
+    25% {
+        background-image: url('https://www.giva.co/cdn/shop/files/testimonial_1024x1024.gif?v=1614292479');
+    }
+
+    50% {
+        background-image: url('https://www.giva.co/cdn/shop/files/testimonial_1024x1024.gif?v=1614292479');
+    }
+
+    75% {
+        background-image: url('https://www.giva.co/cdn/shop/files/testimonial_1024x1024.gif?v=1614292479');
+    }
+
+    100% {
+        background-image: url('https://www.giva.co/cdn/shop/files/testimonial_1024x1024.gif?v=1614292479');
+    }
+}
+.kmag {
+    width: 1520px;
+}
+.kmag-1 {
+    margin-bottom: -70px;
+    height: 50px;
+}
+.tf {
+    height: 640px;
+}
+.sz {
+    margin-top: 50px;
+    width: 200px;
+}   
+.gpas {
+    width: 170px;
+    height: 90px;
+}
+.fit {
+    list-style: none;
+}
+.first{
+    font-size: 15px;
+}
+
+@media screen and (max-width:480px) {
+    .header{
+        width: 500px;
+    }
+    .nine{
+        width: 500px;
+    }
+    .bags {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        margin-left: -35px;
+    }
+    .boxx{
+        font-size: 10px;
+        margin-left: -40px;
+    }
+    .span {
+        margin-left: 50px;
+    }
+    
+    .ffs{
+        font-size: 12px;
+        margin-left: -10px;
+    }
+    .fss{
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    .fss-1{
+        font-size: 12px;
+    }
+    .img-2 {
+        width: 120px;
+        height: 150px;
+        margin-right: 30px;
+    }
+    .img-1 {
+        width: 200px;
+        height: 200px;
+    }
+    .va {
+        margin-left: 230px;
+    }
+    .img-4 {
+        width: 70px;
+        height: 70px;
+    }
+    .img-5 {
+        width: 200px;
+        height: 200px;
+    }
+    .spot {
+        width: 300px;
+        margin-left: -30px;
+    }
+    
+    .spot-1 {
+        width: 300px;
+        margin-left: -30px;
+    }
+    .jgold {
+        margin-left: -10px;
+        width: 50px;
+    }
+    
+    .jgold-1 {
+        width: 50px;
+        margin-left: -30px;
+    }
+    .jewel {
+        margin-left: -10px;
+        font-size: 10px;
+    }
+    
+    .jewel-1 {
+        margin-left: -30px;
+        font-size: 10px;
+    }
+    .fivei {
+        margin-left: 30px;
+        width: 430px;
+    }
+    
+    .fivei-1 {
+        margin-left: 30px;
+        width: 200px;
+    }
+    
+    .fivei-2 {
+        margin-left: 10px;
+        width: 200px;
+    }
+    .img-6 {
+        width: 200px;
+        height: 200px;
+        margin-left: -10px;
+    }
+    .latco-1 {
+        width: 335px;
+        height: 150px;
+    }
+    
+    .latco {
+        width: 335px;
+        height: 150px;
+        margin-left: -30px;
+    }
+    .img-7 {
+        width: 200px;
+        height: 200p;
+        border-radius: 20px;
+    }
+    .img-8 {
+        width: 230px;
+        height: 230px;
+    }
+    .fm {
+        margin-left: 50px;
+    }
+    .fm-1 {
+        margin-right: 10px;
+    }
+    .gift {
+        background-color: white;
+        margin-left: 110px;
+        margin-top: 165px;
+        padding-top: 4px;
+        padding-left: 4px;
+        height: 25px;
+        width: 80px;
+        font-size: 12px;
+    }
+    
+    .gift-1 {
+        background-color: white;
+        margin-left: 320px;
+        margin-top: 165px;
+        padding-top: 4px;
+        padding-left: 6px;
+        height: 25px;
+        width: 80px;
+        font-size: 12px;
+    }
+    .span-1 {
+        margin-left: 90px;
+    }
+    .container-01 {
+        width: 80%;
+        height: 450px;
+        margin-left: 80px;
+    }
+    .kmag {
+        width: 500px;
+    }
+    .tf {
+        height: 1100px;
+        width: 500px;
+    }
+    .gpas {
+        width: 100px;
+        height: 50px;
+    }
+
+}
+
+
+@media (min-width:481px) and (max-width:768px) {
+    .header{
+        width: 800px;
+    }
+    .nine{
+        width: 800px;
+    }
+    .va {
+        margin-left: 350px;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        margin-left: -35px;
+    }
+    .boxx{
+        font-size: 10px;
+        margin-left: -40px;
+    }
+    .img-2 {
+        width: 220px;
+        height: 250px;
+        margin-right: 30px;
+    }
+    .img-1 {
+        width: 250px;
+        height: 250px;
+    }
+    .ffs{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .fss{
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .bags {
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
+    }
+    .img-4{
+        width: 150px;
+        height: 150px;
+    }
+    .img-5 {
+        width: 250px;
+        height: 250px;
+    }
+    .spot {
+        width: 450px;
+    }
+    
+    .spot-1 {
+        width: 450px;
+        margin-left: -30px;
+    }
+    .jgold {
+        margin-left: 10px;
+        width: 90px;
+    }
+    
+    .jgold-1 {
+        width: 90px;
+        margin-left: -20px;
+    }
+    .jewel {
+        margin-left: 30px;
+        font-size: small;
+    }
+    
+    .jewel-1 {
+        margin-left: 1px;
+        font-size: small;
+    }
+    .fivei {
+        margin-left: 50px;
+        width: 715px;
+    }
+    
+    .fivei-1 {
+        margin-left: 50px;
+        width: 350px;
+    }
+    
+    .fivei-2 {
+        margin-left: 10px;
+        width: 350px;
+    }
+    .img-6 {
+        width: 250px;
+        height: 250px;
+        margin-left: -10px;
+    }
+    .img-7 {
+        width: 250px;
+        height: 400p;
+        border-radius: 20px;
+    }
+    .latco-1 {
+        width: 500px;
+        height: 250px;
+    }
+    
+    .latco {
+        width: 500px;
+        height: 250px;
+        margin-left: -30px;
+    }
+    .img-8 {
+        width: 260px;
+        height: 260px;
+    }
+    .span-1 {
+        margin-left: 90px;
+    }
+    .fm {
+        margin-left: 120px;
+    }
+    .gift {
+        background-color: white;
+        margin-left: 160px;
+        margin-top: 215px;
+        padding-top: 4px;
+        padding-left: 4px;
+        height: 25px;
+        width: 80px;
+        font-size: 12px;
+    }
+    
+    .gift-1 {
+        background-color: white;
+        margin-left: 420px;
+        margin-top: 215px;
+        padding-top: 4px;
+        padding-left: 6px;
+        height: 25px;
+        width: 80px;
+        font-size: 12px;
+    }
+    .container-01 {
+        width: 60%;
+        height: 450px;
+        margin-left: 130px;
+    }
+    .kmag {
+        width: 800px;
+    }
+    .tf {
+        height: 850px;
+        width: 800px;
+    }
+
+}
+
+
+@media (min-width:769px) and (max-width:1024px){
+    .header{
+        width: 1050px;
+    }
+    .nine{
+        width: 1050px;
+    }
+    .span{
+        margin-left: 70px;
+    }
+    .span-1 {
+        margin-left: 130px;
+    }
+    .boxx{
+        font-size: 15px;
+        margin-left: -40px;
+    }
+    .img-4{
+        width: 200px;
+        height: 200px;
+     }
+    .jgold {
+        margin-left: 20px;
+        width: 130px;
+    }
+    
+    .jgold-1 {
+        width: 130px;
+        margin-left: -20px;
+    }
+    .jewel {
+        margin-left: 50px;
+    }
+    
+    .jewel-1 {
+        margin-left: 1px;
+    }
+    .fivei {
+        margin-left: 50px;
+        width: 950px;
+    }
+    
+    .fivei-1 {
+        margin-left: 50px;
+        width: 450px;
+    }
+    
+    .fivei-2 {
+        margin-left: 10px;
+        width: 450px;
+    }
+    .img-7 {
+        width: 300px;
+        height: 500p;
+        border-radius: 20px;
+    }
+    .gift {
+        background-color: white;
+        margin-left: 160px;
+        margin-top: 250px;
+        padding-top: 4px;
+        padding-left: 6px;
+        height: 35px;
+        width: 130px;
+        font-size: 20px;
+    }
+    
+    .gift-1 {
+        background-color: white;
+        margin-left: 470px;
+        margin-top: 250px;
+        padding-top: 4px;
+        padding-left: 6px;
+        height: 35px;
+        width: 130px;
+        font-size: 20px;
+    }
+    .fm {
+        margin-left: 170px;
+    }
+    .kmag {
+        width: 1030px;
+    }
+    .va {
+        margin-left: 500px;
+    }
+    .container-01 {
+        width: 55%;
+        height: 650px;
+        margin-left: 280px;
+    }
+    .tf {
+        height: 740px;
+        width: 1030px;
+    }       
+
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .header{
+        width: 1220px;
+    }
+    .nine{
+        width: 1220px;
+    }
+    .span{
+        margin-left: 80px;
+    }
+    .span-1 {
+        margin-left: 130px;
+    }
+    .img-4{
+       width: 250px;
+       height: 250px;
+    }
+    .jgold {
+        margin-left: 50px;
+        width: 150px;
+    }
+    
+    .jgold-1 {
+        width: 150px;
+        margin-left: -20px;
+    }
+    .jewel {
+        margin-left: 90px;
+    }
+    
+    .jewel-1 {
+        margin-left: 20px;
+    }
+    .fivei {
+        margin-left: 50px;
+        width: 1130px;
+    }
+    
+    .fivei-1 {
+        margin-left: 50px;
+        width: 550px;
+    }
+    
+    .fivei-2 {
+        margin-left: 10px;
+        width: 550px;
+    }   
+    .fm {
+        margin-left: 120px;
+    }
+    .kmag {
+        width: 1210px;
+    }
+    .tf {
+        height: 680px;
+        width: 1210px;
+    }
+    .va {
+        margin-left: 570px;
+    } 
+}

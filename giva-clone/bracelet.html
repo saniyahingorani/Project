@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRACELET</title>
+    <link rel="icon" href="download.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .line {
+                width: 1370px;
+                margin-left: 80px;
+            }
+            .num {
+                margin-left: 100px;
+            }
+            .numm {
+                margin-left: 1150px;
+            }
+            .sf {
+                margin-left: 30%;
+            }
+            .fss {
+                font-size: large;
+            }
+            .tf {
+                height: 650px;
+            }
+            .tm {
+                margin-top: 50px;
+            }   
+            .fit {
+                list-style: none;
+            }
+            .abc {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .def {
+                padding-left: 40px;
+                white-space: nowrap;
+                font-size: small;
+                cursor: pointer;
+            }
+            .icon {
+                width: 35px;
+                height: 40px;
+            }
+            .icon-1 {
+                width: 70px;
+                height: 45px;
+            }
+            .lg {
+                width: 35px;
+                height: 35px;
+                margin-left: 20px;
+            }
+            .wh {
+                width: 300px;
+                height: 300px;
+            }
+            .mi {
+                margin-left: 70px;
+            }
+            .drop {
+                margin-left: 100px;
+            }
+            .cursor {
+                cursor: pointer;
+            }
+            .sz {
+                margin-top: 50px;
+                width: 220px;
+            }
+            .gpas{
+                width: 170px;
+                height: 90px;
+            }
+            .hover:hover {
+                border-bottom: 1px solid black;
+            }
+            .dropbtn {
+                background-color: transparent;
+                color: rgb(63, 63, 63);
+                padding: 9px;
+                font-size: 16px;
+                border: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                height: 300px;
+                width: 200px;
+                cursor: pointer;
+            }
+            .contentshop {
+                height: auto;
+                width: auto;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 2px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+    
+    
+            @media screen and (max-width:480px) {
+                .header{
+                    width: 480px;
+                    height: 50px;
+                }
+                .line {
+                    display: none;
+                }
+                .wh{
+                    width: 170px;
+                    height: 170px; 
+                } 
+                .fss{
+                    font-size: 12px;
+                    margin-left: -5px;
+                } 
+                .drop {
+                    visibility: hidden;
+                }
+                .num {
+                    visibility: hidden;
+                }
+                .numm {
+                    display: none;
+                }
+                .lg {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 5px;
+                }
+                .tm {
+                    margin-top: -250px;
+                }
+                .sp {
+                    margin-left: 35px;
+                }
+                .tf {
+                    height: 1250px;
+                }
+                .sz {
+                    margin-top: 50px;
+                }
+                .sf {
+                    margin-left: 10px;
+                }
+                .gpas{
+                    width: 100px;
+                    height: 60px;
+                }
+            }
+    
+    
+            @media (min-width:481px) and (max-width:768px) {
+                .header {
+                    width: 780px;
+                    height: 50px;
+                }
+                .icn {
+                    margin-left: 400px;
+                }
+                .line {
+                    width: 650px;
+                }
+                .sf{
+                    margin-left: 200px;
+                }
+                .num {
+                    margin-left: 100px;
+                }
+    
+                .numm {
+                    margin-left: 420px;
+                }
+                .st {
+                    margin-left: 4px;
+                }
+                .lg {
+                    width: 35px;
+                    height: 35px;
+                    margin-left: 20px;
+                }
+                .tf {
+                    height: 850px;
+                    width: 780px;
+                }
+                .sz {
+                    margin-top: 50px;
+                }
+                .gpas{
+                    width: 150px;
+                    height: 80px;
+                }
+            }
+    
+            @media (min-width:769px) and (max-width:1024px) {
+    
+                .mi {
+                    margin-left: 70px;
+                }
+                .line {
+                    width: 900px;
+                    margin-left: 60px;
+                }
+               .numm{
+                    margin-left: 700px;
+                }
+                .sf {
+                    margin-left: 600px;
+                }
+                .num {
+                    margin-left: 70px;
+                }
+                .tf {
+                    height: 780px;
+                }
+                .gpas{
+                    width: 170px;
+                    height: 90px;
+                }
+            }
+    
+    
+            @media (min-width:1025px) and (max-width:1200px)  {
+                .num{
+                    margin-left: 100px;
+                }
+                .numm{
+                    margin-left: 870px;
+                }
+    
+                .line{
+                    width: 1100px;
+                    margin-left: 60px;
+               }
+                .sf {
+                    margin-left: 300px;
+                }
+                .mi {
+                    margin-left: 50px;
+                }
+    
+                .fss {
+                    font-size: medium;
+                }
+    
+                .tf {
+                    height: 690px;
+                }
+                .sz {
+                    width: 150px;
+                }
+                .gpas{
+                    width: 170px;
+                    height: 90px;
+                }
+            }
+        </style>    
+
+</head>
+<body>
+    <!-- HEADER -->
+
+    <div class="alert alert-danger text-center header">FREEGIFT - free gift worth 1499 on orders over 2199</div>
+
+    <!-- LOGO -->
+
+  <div class="abc">
+    <div>
+      <a class="navbar-brand" href="#">
+      <img class="js lazyautosizes lazyloaded" src="//www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_300x300.png?v=1685644707" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.8478260869565217" data-sizes="auto" alt="GIVA Jewellery" style="max-width: 85px" data-srcset="//www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_180x.png?v=1685644707 180w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_360x.png?v=1685644707 360w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_540x.png?v=1685644707 540w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_720x.png?v=1685644707 720w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_900x.png?v=1685644707 900w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1080x.png?v=1685644707 1080w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1296x.png?v=1685644707 1296w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1512x.png?v=1685644707 1512w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1728x.png?v=1685644707 1728w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_2048x.png?v=1685644707 2048w" sizes="85px" srcset="//www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_180x.png?v=1685644707 180w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_360x.png?v=1685644707 360w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_540x.png?v=1685644707 540w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_720x.png?v=1685644707 720w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_900x.png?v=1685644707 900w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1080x.png?v=1685644707 1080w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1296x.png?v=1685644707 1296w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1512x.png?v=1685644707 1512w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_1728x.png?v=1685644707 1728w, //www.giva.co/cdn/shop/files/logo_c38952e6-76e4-4f5f-8287-546ce1f9bc85_2048x.png?v=1685644707 2048w">
+      </a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </span>
+        
+        <!-- MENU -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="nav-item dropdown">
+            <div id="#two">
+              <a class="hover nav-link dropdown-toggle dropbtn  text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop All
+              </a>
+
+              <div class=" dropdown-content contentshop" aria-labelledby="navbarDropdown">
+                <div style="display: flex;">
+
+                  <div class="def">
+
+                    <div style="width: 100px;">
+                      <p class="hover fw-bold" style="white-space: nowrap;">Shop By Category</p>
+                      <p class="hover">Earrings</p>
+                      <p class="hover">Rings</p>
+                      <p class="hover">Necklaces & Pendants</p>
+                      <p class="hover">Bracelets</p>
+                      <p class="hover">Jewellery Sets</p>
+                      <p class="hover">Anklets</p>
+                      <p class="hover">Personalised</p>
+                      <p class="hover">Mangalsutra</p>
+                      <p class="hover">Chains</p>
+                      <p class="hover">Toe Rings</p>
+                      <p class="hover">Nose Pins & Rings</p>
+                      <p class="hover">All</p>
+                    </div>
+
+                  </div>
+
+                  <div class="def">
+
+                    <p class="hover fw-bold">Shop By Metal</p>
+                    <p class="hover">14k Gold</p>
+                    <p class="hover">18k Gold</p>
+                    <p class="hover">925 Silver</p>
+                  </div>
+
+                  <div class="def">
+                    <p class="hover fw-bold">Shop By Color</p>
+                    <p class="hover">Gold Plated</p>
+                    <p class="hover">Rose Gold</p>
+                    <p class="hover">Silver</p>
+                    <p class="hover">Oxidised Silver</p>
+                  </div>
+                  <div class="def">
+
+                    <p class="hover fw-bold">Shop By Stone</p>
+                    <p class="hover">Zircon</p>
+                    <p class="hover">Lab -Grown Diamonds</p>
+                    <p class="hover">Natural Diamonds</p>
+                    <p class="hover">Coloured Stone</p>
+                    <p class="hover">Pearl</p>
+                    <p class="hover">Chalcedony</p>
+                    <p class="hover">Marcasite</p>
+                    <p class="hover">None</p>
+                  </div>
+
+                  <div class="def">
+
+                    <p class="hover fw-bold">Shop By Style</p>
+                    <p class="hover">Everyday Staples</p>
+                    <p class="hover">Office Minimals</p>
+                    <p class="hover">Party Pieces</p>
+                    <p class="hover">Wedding Wear</p>
+                    <p class="hover">Mens</p>
+                  </div>
+
+                  <div class="def">
+
+                    <p class="hover fw-bold">Shop Featured</p>
+                    <p class="hover text-danger">New</p>
+                    <p class="hover">Bestsellers</p>
+                    <p class="hover">Kids Collection</p>
+                    <p class="hover">Festive Blings</p>
+                    <p class="hover">Anuskha's Favourites</p>
+                  </div>
+
+                  <div class="def">
+
+                    <p class="hover fw-bold">Shop By Trending</p>
+                    <p class="hover">Colours of Life</p>
+                    <p class="hover">Charms</p>
+                    <p class="hover">Royals of GIVA</p>
+                    <P class="hover">Love in Paris</P>
+                    <P class="hover">Vanki Rings</P>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <li class="nav-item">
+            <a class="hover nav-link " href="pendants.html">Pendants</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover nav-link" href="earrings.html">Earrings</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover nav-link" href="rings.html">Rings</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover nav-link" href="bracelet.html">Bracelets</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover nav-link" href="#">Bestsellers</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover nav-link" href="#">Just Arrived</a>
+          </li>
+
+          <div class="dropdown">
+            <button class="dropbtn hover dropdown-toggle">More</button>
+            <div class="dropdown-content">
+              <a class="hover">Track Order</a>
+              <a class="hover">Giva Gift Store</a>
+              <a class="hover">Store Locator</a>
+              <a class="hover">Media Mentions</a>
+              <a class="hover">Corporate Partnerships</a>
+              <a class="hover">Jewellery care</a>
+              <a class="hover">GIVA Cares</a>
+              <a class="hover">Join us</a>
+              <a class="hover">GIVA Blog</a>
+              <a class="hover">Support & FAQ</a>
+              
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- ICONS -->
+
+    <div class="d-flex cursor icn">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 37 40" style=" margin-right: 20px; width: 25px; height: 25px;
+      ">
+        <path
+          d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z">
+        </path>
+      </svg>
+
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-login" viewBox="0 0 28.33 37.68"
+        style=" margin-right: 30px; width: 25px; height: 25px;
+      ">
+        <path
+          d="M14.17 14.9a7.45 7.45 0 1 0-7.5-7.45 7.46 7.46 0 0 0 7.5 7.45zm0-10.91a3.45 3.45 0 1 1-3.5 3.46A3.46 3.46 0 0 1 14.17 4zM14.17 16.47A14.18 14.18 0 0 0 0 30.68c0 1.41.66 4 5.11 5.66a27.17 27.17 0 0 0 9.06 1.34c6.54 0 14.17-1.84 14.17-7a14.18 14.18 0 0 0-14.17-14.21zm0 17.21c-6.3 0-10.17-1.77-10.17-3a10.17 10.17 0 1 1 20.33 0c.01 1.23-3.86 3-10.16 3z">
+        </path>
+      </svg>
+
+      <i class="fa-sharp fa-regular fa-heart fa-xl"
+        style="color: #000000; margin-top: 12px; margin-right: 100px; margin-left: -10px; height: 30px; width: 30px;"></i>
+
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 37 40" style="width: 25px; height: 25px; margin-right: 50px; margin-left: -80px;
+      ">
+        <path
+          d="M36.5 34.8L33.3 8h-5.9C26.7 3.9 23 .8 18.5.8S10.3 3.9 9.6 8H3.7L.5 34.8c-.2 1.5.4 2.4.9 3 .5.5 1.4 1.2 3.1 1.2h28c1.3 0 2.4-.4 3.1-1.3.7-.7 1-1.8.9-2.9zm-18-30c2.2 0 4.1 1.4 4.7 3.2h-9.5c.7-1.9 2.6-3.2 4.8-3.2zM4.5 35l2.8-23h2.2v3c0 1.1.9 2 2 2s2-.9 2-2v-3h10v3c0 1.1.9 2 2 2s2-.9 2-2v-3h2.2l2.8 23h-28z">
+        </path>
+      </svg>
+    </div>
+  </div>
+
+<!-- MAIN IMAGE -->
+    
+    <img style="width: 100%;" src="https://www.giva.co/cdn/shop/files/Rakshabandhan_Bracelets-min.jpg?v=10628445650181120622" alt="">
+
+<!-- DROPDOWN -->
+
+    <div  class="drop" style="display: flex; flex-wrap: wrap;">
+        <div class="dropdown mt-5">
+            <button class="btn btn-body dropdown-toggle fst-normal" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: 1px solid  rgb(241, 243, 245); border-radius: 0px;">PRODUCT TYPE</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Bracelet
+                            <p class="text-secondary">(225)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Gold
+                                Bracelet <p class="text-secondary">(13)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name=""
+                                    value="something">Mangalsutra<p class="text-secondary">(14)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Sets<p
+                                    class="text-secondary">(1)</p>
+                            </label>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown mt-5">
+            <button class="btn btn-body dropdown-toggle fst-normal" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: 1px solid  rgb(241, 243, 245); border-radius: 0px; margin-left: 20px;">STONE</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Colored
+                            <p class="text-secondary">(3)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Colored
+                                Stone<p class="text-secondary">(72)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Colored
+                                Zircon<p class="text-secondary">(45)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name=""
+                                    value="something">Marcasite<p class="text-secondary">(1)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">None<p
+                                    class="text-secondary">(99)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Pearl<p
+                                    class="text-secondary">(47)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Zircon<p
+                                    class="text-secondary">(439)</p>
+                            </label>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown mt-5">
+            <button class="btn btn-body dropdown-toggle fst-normal" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: 1px solid  rgb(241, 243, 245); border-radius: 0px; margin-left: 20px;">COLOR</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Gold
+                            <p class="text-secondary">(159)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Oxidised
+                                Silver<p class="text-secondary">(35)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Rose
+                                Gold<p class="text-secondary">(213)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Silver<p
+                                    class="text-secondary">(224)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Yellow
+                                Gold<p class="text-secondary">(1)</p>
+                            </label>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown mt-5">
+            <button class="btn btn-body dropdown-toggle fst-normal" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: 1px solid  rgb(241, 243, 245); border-radius: 0px; margin-left: 20px;">STYLE</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Everyday
+                            <p class="text-secondary">(221)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Office
+                            <p class="text-secondary">(103)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Party
+                                <p class="text-secondary">(77)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Traditional
+                                <p class="text-secondary">(16)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name=""
+                                    value="something">Wedding<p class="text-secondary">(13)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                
+            </ul>
+        </div>
+
+        <div class="dropdown mt-5">
+            <button class="btn btn-body dropdown-toggle fst-normal" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: 1px solid  rgb(236, 233, 233); border-radius: 0px; margin-left: 20px;">SUB CATEGORY</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <input  class="input-field fa-solid fa-magnifying-glass"
+                   type="text" placeholder="Search options" style="font-size: small; width: 100%; height: 30px;">
+                   <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Bangles
+                            <p class="text-secondary">(30)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Chains
+                            <p class="text-secondary">(101)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input" id="" name="" value="something">Charms
+                            <p class="text-secondary">(18)</p>
+                        </label>
+                    </div>
+                </a></li>
+                
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Cuffs
+                                <p class="text-secondary">(17)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Evil Eyes
+                                <p class="text-secondary">(5)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name=""
+                                    value="something">Flexible<p class="text-secondary">(4)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Flexibles<p
+                                    class="text-secondary">(7)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Layered<p
+                                    class="text-secondary">(1)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Mangalsutras<p
+                                    class="text-secondary">(3)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Mangalsutras<p
+                                    class="text-secondary">(16)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Mens<p
+                                    class="text-secondary">(47)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Personalised<p
+                                    class="text-secondary">(4)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Slider<p
+                                    class="text-secondary">(1)</p>
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="">
+                            <label class="form-check-label d-flex" for="">
+                                <input type="checkbox" class="form-check-input" id="" name="" value="something">Tennis
+                                <p class="text-secondary">(5)</p>
+                            </label>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown mt-5">
+            <button class="btn btn-body dropdown-toggle fst-normal" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: 1px solid  rgb(236, 233, 233); border-radius: 0px; margin-left: 20px;">METAL</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input fst-normal" id="" name="" value="something">14K Gold<p
+                                class="text-secondary">(13)</p>
+                        </label>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <div class="">
+                        <label class="form-check-label d-flex" for="">
+                            <input type="checkbox" class="form-check-input fst-normal" id="" name="" value="something">925 Silver<p
+                                class="text-secondary">(624)</p>
+                        </label>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown mt-5 sf">
+            <button class="btn btn-body dropdown-toggle fst-normal" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: 1px solid  rgb(241, 243, 245); border-radius: 0px;">SORT BY:FEATURED</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                
+                <p class="text-secondary" style="text-align: center;">Best Selling</p>
+                <p class="text-secondary" style="text-align: center;">Alphabetically, A-Z </p>
+                <p class="text-secondary" style="text-align: center;">Alphabetically, Z-A </p>
+                <p class="text-secondary" style="text-align: center;">Price, low to high </p>
+                <p class="text-secondary" style="text-align: center;"> Price, high to low</p>
+                <p class="text-secondary" style="text-align: center;"> Date, new to old</p>
+                <p class="text-secondary" style="text-align: center;"> Date, old to new</p>
+                <p class="text-secondary" style="text-align: center;"> % Sale off</p>   
+            </ul>
+        </div>
+    </div>
+
+    <hr class="line">
+    <div class="d-flex mt-3 num">
+        <p class="text-dark fw-bold">619</p>
+        <p style="margin-left: 5px;" class="text-secondary">Products</p>
+
+        <p class="numm" style="font-size: small;">Show</p>
+        <div style="margin-top: -10px;" class="">
+            <button class="btn btn-body dropdown-toggle" type="" data-bs-toggle="dropdown">12</button>
+            <ul class="dropdown-menu">
+                <p class="text-secondary">24</p>
+                <p class="text-secondary">48</p>
+        </div>
+        </a></li>
+        </ul>
+    </div>
+    </div>
+
+<!-- IMAGES -->
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;" class="tm">
+        <div class=" ms-5 cursor">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR044_1_1024x1024.jpg?v=1627297417"  alt="">
+          <p class="fss text-center">Anushka Sharma Rose Gold Supple <br> Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 4,599.00</span> <strike class="fss fw-light text-secondary st">₹
+            9,999.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0141_1_2d06b55a-bc60-4cf0-93c9-3f768a48025c_1024x1024.jpg?v=1634195801" alt="">
+          <p class="fss text-center">Anushka Sharma Rose Gold Deer <br> Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 2,099.00</span> <strike class="fss fw-light text-secondary st">₹
+            4,199.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR048_1_35cccc4f-e486-40c1-9fd1-c37eae7339db_1024x1024.jpg?v=1652446321" alt="">
+          <p class="fss text-center">Anushka Sharma Rose Gold Crown <br> Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 2,099.00</span> <strike class="fss fw-light text-secondary st">₹
+            4,199.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR046_1_2_a91b3ca0-1829-4267-a462-48ac2187e87b_1024x1024.jpg?v=1652443622" alt="">
+          <p class="fss text-center">Anushka Sharma Silver Heartlock <br> Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 3,199.00</span> <strike class="fss fw-light text-secondary st">₹
+            6,399.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+              <img class="wh" src="https://www.giva.co/cdn/shop/products/BR066_1_3fe7d05e-fdd3-4dfe-bf5b-1495eb372bb8_1024x1024.jpg?v=1651493176"  alt="">
+              <p class="fss text-center">Rose Gold Slender Bracelet</p>
+              <span class="fss fw-light mi sp">₹ 4,599.00</span> <strike class="fss fw-light text-secondary st">₹
+                9,199.00</strike>
+                <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+              <img class="wh" src="https://www.giva.co/cdn/shop/products/BR061_1_1024x1024.jpg?v=1672307833" alt="">
+              <p class="fss text-center">Silver Interlocked Heart Duo <br> Bracelet</p>
+              <span class="fss fw-light mi sp">₹ 2,599.00</span> <strike class="fss fw-light text-secondary st">₹
+                5,199.00</strike>
+                <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+              <img class="wh" src="https://www.giva.co/cdn/shop/products/AVBR034_1_1024x1024.jpg?v=1660977361" alt="">
+              <p class="fss text-center">Oxidised Silver Crescent Moon <br> Bracelet</p>
+              <span class="fss fw-light mi sp">₹ 1,299.00</span> <strike class="fss fw-light text-secondary st">₹
+                2,599.00</strike>
+                <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+              <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0158_1_1024x1024.jpg?v=1679994782" alt="">
+              <p class="fss text-center">Rose Gold Dual Heart Bracelet</p>
+              <span class="fss fw-light mi sp">₹ 4,999.00</span> <strike class="fss fw-light text-secondary st">₹
+                9,999.00</strike>
+                <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+            <img class="wh" src="https://www.giva.co/cdn/shop/products/AVBR045_1_1024x1024.jpg?v=1672383692"  alt="">
+            <p class="fss text-center">Silver Infinity Bracelet</p>
+            <span class="fss fw-light mi sp">₹ 999.00</span> <strike class="fss fw-light text-secondary st">₹
+                    1,999.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+            <img class="wh" src="https://www.giva.co/cdn/shop/files/BR047_1_1024x1024.jpg?v=1688193855" alt="">
+            <p class="fss text-center">Rose Gold Cubic Crystal Bracelet</p>
+            <span class="fss fw-light mi sp">₹ 4,599.00</span> <strike class="fss fw-light text-secondary st">₹
+                    9,199.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+            <img class="wh" src="https://www.giva.co/cdn/shop/products/BR045_1_1024x1024.jpg?v=1631028450" alt="">
+            <p class="fss text-center">Rose Gold Layered Love Bracelet</p>
+            <span class="fss fw-light mi sp">₹ 2,299.00</span> <strike class="fss fw-light text-secondary st">₹
+                    4,599.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+            <img class="wh" src="https://www.giva.co/cdn/shop/products/BR043_1_9d70a678-7c15-4435-b765-c1d245b5aed2_1024x1024.jpg?v=1632824167" alt="">
+            <p class="fss text-center">Silver Supple Bracelet</p>
+            <span class="fss fw-light mi sp">₹ 4,499.00</span> <strike class="fss fw-light text-secondary st">₹
+                    8,999.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/files/BR096_1_1024x1024.jpg?v=1694079938"  alt="">
+          <p class="fss text-center">Rose Gold Classic Love Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 2,999.00</span> <strike class="fss fw-light text-secondary st">₹
+            5,999.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0330_1_1024x1024.jpg?v=1647001902" alt="">
+          <p class="fss text-center">Silver Classy Link Bracelet For Him</p>
+          <span class="fss fw-light mi sp">₹ 4,899.00</span> <strike class="fss fw-light text-secondary st">₹
+            9,799.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR029_1_73732f86-04ba-48d9-b56d-e361525e7490_1024x1024.jpg?v=1631028689" alt="">
+          <p class="fss text-center">Silver Rose Gold Dual Entangle <br> Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 3,099.00</span> <strike class="fss fw-light text-secondary st">₹
+            6,199.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0196_1_b82f394b-bdc9-4ae6-896b-2db5c77d3fdf_1024x1024.jpg?v=1631024312" alt="">
+          <p class="fss text-center">Silver Solitaire GIVA Signature <br> Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 3,599.00</span> <strike class="fss fw-light text-secondary st">₹
+            7,199.00</strike>
+            <img class="lg"  src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0115_1_1024x1024.jpg?v=1625908478"  alt="">
+          <p class="fss text-center">Silver Woven Leaf Bracelet</p>
+          <span class="fss fw-light mi">₹ 3,699.00</span> <strike class="fss fw-light text-secondary">₹
+            7,399.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0321_1_1024x1024.jpg?v=1643374996" alt="">
+          <p class="fss text-center">Rose Gold Valentine's Charm <br> Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 1,799.00</span> <strike class="fss fw-light text-secondary st">₹
+            3,599.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR058_1_9a550c51-304a-4fc8-bbab-3d0d3db7c2a4_1024x1024.jpg?v=1625905460" alt="">
+          <p class="fs-10 text-center">GIVA Classic Solitaire Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 4,699.00</span> <strike class="fss fw-light text-secondary st">₹
+            9,399.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0164_1_1024x1024.jpg?v=1671269869" alt="">
+          <p class="fss text-center">Rose Gold Swaying Leaf Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 3,899.00</span> <strike class="fss fw-light text-secondary st">₹
+            7,799.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0278_1_1024x1024.jpg?v=1639754174"  alt="">
+          <p class="fss text-center">Golden Chain Trail Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 1,999.00</span> <strike class="fss fw-light text-secondary st">₹
+            3,999.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/files/BR0217_1_1024x1024.jpg?v=1694080221" alt="">
+          <p class="fss text-center">Silver Moon Magic Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 1,599.00</span> <strike class="fss fw-light text-secondary st">₹
+            3,199.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/files/BR0409_1_1024x1024.jpg?v=1694154728" alt="">
+          <p class="fss text-center">Rose Gold Protected Love <br> Mangalsutra Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 1,899.00</span> <strike class="fss fw-light text-secondary st">₹
+            3,799.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+
+        <div class=" ms-5 cursor mt-4">
+          <img class="wh" src="https://www.giva.co/cdn/shop/products/BR0290_1-Copy_1024x1024.jpg?v=1639756806" alt="">
+          <p class="fss text-center">Golden Circular Studded Bracelet</p>
+          <span class="fss fw-light mi sp">₹ 3,099.00</span> <strike class="fss fw-light text-secondary st">₹
+            6,199.00</strike>
+            <img class="lg" src="https://www.giva.co/cdn/shop/t/83/assets/cart_icon.jpg?v=175636076238870739071676641165" alt="">
+        </div>
+    </div>       
+
+    
+            <!-- QUESTIONS -->
+
+            <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed fw-light bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        THE HISTORY OF SILVER BRACELETS
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-secondary">
+                        Originating from the Greek word "brachile," meaning "of the arm," bracelets have long been cherished accessories adorning the wrists of individuals throughout history. From Greek soldiers to the Pharaohs of Egypt, these elegant adornments have symbolised power, style, and personal expression.
+                        At GIVA Jewellery, we bring you a stunning collection of silver bracelets for women that embody the essence of timeless beauty and romance.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-light bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        EMBRACE THE FOREFRONT OF FASHION WITH SILVER BRACELETS FOR WOMEN
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-secondary">
+                        When it comes to staying on-trend, GIVA's silver bracelets are a must-have in every woman's jewellery collection. Crafted with meticulous attention to detail, our bracelets come in a variety of designs, including heart-shaped motifs, mangalsutra-inspired patterns, and more. Each piece is a testament to our commitment to quality and sophistication. Rest assured, every GIVA bracelet is accompanied by a certificate of authenticity, ensuring you receive nothing but the finest craftsmanship.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-light bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        UNLEASH YOUR PERSONAL STYLE WITH GIVA'S VERSATILE BRACELETS
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-secondary">
+                        When it comes to styling bracelets, the possibilities are endless. GIVA empowers you to create your own unique fashion statements. One popular method is the mix and match approach, where you intentionally wear bracelets of different sizes, colours, and textures to create an eye-catching wrist stack.
+                        Alternatively, you can make a bold statement by stacking multiple bracelets together. Experiment with stacking up to five bracelets for an exquisite look that's sure to turn heads. Just remember, when you opt for this style, keep your other accessories minimal to let your bracelets shine.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed fw-light bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        THE POWER OF GIFT-GIVING: EXPRESS LOVE WITH GIVA BRACELETS 
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body text-secondary">
+                        GIVA bracelets possess a special power - they can express love, affection, and cherished connections. Whether you're celebrating a milestone or simply want to show someone how much they mean to you, our bracelets make the perfect gift. Engrave the name of your beloved on a delicate silver bracelet, creating a personalised keepsake that will be treasured forever.
+                        For friends and loved ones with whom you share a platonic bond, consider gifting them silver bracelets adorned with celestial or natural motifs, like a delicate leaf or an enchanting deer, symbolising the beauty of your relationship.
+                        And for those who appreciate a touch of sparkle, our zircon-studded bracelets are a delightful choice.
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed fw-light bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        DISCOVER THE MAGIC OF GIVA JEWELLERY
+                    </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body text-secondary">
+                        At GIVA, we believe that every woman deserves to adorn herself with jewellery that not only enhances her beauty but also resonates with her unique personality. Our silver bracelets for women are meticulously crafted to capture the essence of femininity, love, and elegance. With GIVA, you'll fall head over heels for our exquisite designs, exceptional quality, and the emotions they evoke.
+                        Explore our enchanting collection of silver bracelets and unlock a world of style possibilities. Embrace the spirit of romance, celebrate special moments, and express your deepest affections with GIVA's captivating jewellery. Let your wrists sparkle and your heart shine bright with GIVA - where love meets beauty in every delicate silver bracelet.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+             <!-- FOOTER -->
+
+             <footer class="flast mt-5 tf" style="background-color:  rgb(241, 243, 245);">
+                <div class="container">
+                  <div class="row row-cols-4 ">
+                    <div class="col footer1">
+                      <li class="footer-item fit">Quick links</li>
+                      <br> <br>
+                      <li class="footer-item fit">Support</li>
+                      <li class="footer-item fit">Store Locator</li>
+                      <li class="footer-item fit">Offers & Promotions</li>
+                      <li class="footer-item fit">International Shipping</li>
+                      <li class="footer-item fit">Careers</li>
+                      <li class="footer-item fit">Jewellery Care</li>
+                      <li class="footer-item fit">Blogs</li>
+                      <li class="footer-item fit">Reviews</li>
+                      <li class="footer-item fit">Privacy policy</li>
+                      <li class="footer-item fit">Shipping & Returns</li>
+                      <li class="footer-item fit">International Shipping FAQs</li>
+                      <li class="footer-item fit">Terms of service</li>
+                    </div>
+                     <div class="col footer1">
+                      <li class="footer-item fit">Newsletter</li>
+                      <div><input class="sz" type="text" placeholder="Email address"><button
+                        class="bg-black text-white">SUBSCRIBE</button></div>
+                      
+                    </div>
+                    <div class="col footer1">
+                      
+                    </div> 
+            
+                    <div class="col footer-item pt-3 ">
+                      <p>Contact us</p>
+                      <p class="card-text cardTextboth mt-auto">BIS : HM/C - 6290031216
+        
+                        <br> For any suggestions, queries <br> or complaints please contact us: <br>
+                        
+                        Indiejewel Fashions Private Limited <br>
+                        
+                        Third Floor, Magnum Vista, <br> Raghuvanahalli, Bangalore 560062 <br>
+                        
+                        -  care@giva.co <br>
+                        
+                        -  7829558887 (10 AM to 6:30 PM)    
+                      </p>
+                      <img class="curor gpas"
+                        src="https://www.giva.co/cdn/shop/t/83/assets/getItOnGooglePlay_500x.jpg?v=74131028605988013721663304919"
+                        alt="">
+                    <p class="fw-bold text-dark">Channel Partners</p>
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-1.jpg" alt="">
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-2.jpg" alt="">
+                    <img class="icon-1"
+                        src="https://www.giva.co/cdn/shop/t/83/assets/Nykaa.png?v=117872246117602344131666968567" alt="">
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-3.jpg" alt="">
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-4.jpg" alt="">
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-5.jpg" alt="">
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-6.jpg" alt="">
+                    <br>
+                    <img class="icon-1"
+                        src="https://www.giva.co/cdn/shop/t/83/assets/fnplogo.png?v=150241034458446545351666968594" alt="">
+                    <img class="icon-1"
+                        src="https://www.giva.co/cdn/shop/t/83/assets/Zivame.png?v=160861322677169437791666968637" alt="">
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-7.jpg" alt="">
+                    <img class="icon" src="https://cdn.shopify.com/s/files/1/0061/8378/0442/files/logos-8.jpg" alt="">
+                    <img class="icon"
+                        src="https://www.giva.co/cdn/shop/t/83/assets/pantaloons.jpg?v=63639954426176512161666969339" alt="">   
+                    </div>
+                  </div>
+                </div>
+              
+        
+        
+            <hr class="cursor" style="background-color: rgb(241, 243, 245);">
+            <div style="margin-left: 150px;">
+                <i class="fa-brands fa-square-facebook fa-2xl" style="color: #5a5a5a;"></i>
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #5a5a5a; margin-left: 20px;"></i>
+                <i class="fa-brands fa-youtube fa-2xl" style="color: #5a5a5a; margin-left: 20px;"></i>
+                <i class="fa-brands fa-linkedin fa-2xl" style="color: #5a5a5a; margin-left: 20px;"></i>
+            </div>
+            <p class="text-secondary" style="margin-left: 150px; font-size: small; margin-top: 20px;">© 2023, GIVA Jewellery
+            </p>
+            </footer>
+
+</body>
+</html>
